@@ -1,0 +1,59 @@
+<div class="header">
+	<div class="top-t">
+		<nav>
+			<a href="#">|&nbsp;收藏本站&nbsp;|</a>
+			<span>关注我们:</span>
+			<a href="#"></a>
+			<a href="#"></a>
+		</nav>
+		<div>
+			<span>欢迎光临本店，</span>
+			<a href="deng.html" id="user11">登录</a>|
+			<a href="#" id="xxx">注册</a>|
+		</div>
+	</div>
+	<div class="top-b">
+		<a href="#"><img src="../images/logo.gif" /></a>
+		<div class="inp">
+			<input type="text" style="padding-left: 5px;" id="sea" />
+			<input type="submit" value="" id="sut" />
+			<ul class="searchbox"></ul>
+		</div>
+		<div class="che">
+			<a href="gou.html" title="查看购物车" id="cun">0</a>
+			<a href="gou.html" id="btn">购物车</a>
+		</div>
+	</div>
+</div>
+<div id="nav-tt">
+	<nav class="navtt">
+		<a href="home.html" class="cur-tt">花店首页</a>
+		<a href="list.html">鲜花礼品</a>
+		<a href="list.html">开业花篮</a>
+		<a href="list.html">婚礼鲜花</a>
+		<a href="list.html">台花桌花</a>
+		<a href="list.html">永生花</a>
+	</nav>
+</div>
+<script>
+	if($.cookie("user")){
+			$("#user11").html($.cookie("user"))
+			$("#xxx").html("注销")
+		}
+	$("#xxx").click(function(){
+		if($(this).html() == "注册"){
+			location.href = "zhu.html"
+		}else{
+			$.cookie("user","",{expires:0,path:"/"});
+			location.reload();
+		}
+	})
+	if(localStorage.getItem("shop")){
+		var str = 0;
+		var newObj = JSON.parse(localStorage.getItem("shop"));
+		$.each(newObj, function(i,n) {
+			str += n
+		});
+		$("#cun").html(str)
+	}
+</script>

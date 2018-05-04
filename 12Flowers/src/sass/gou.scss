@@ -1,0 +1,38 @@
+#main-wrap{
+    width: 100%;
+}
+.main{
+    width: 1200px;
+    margin: 0 auto;
+}
+#hear{
+    height: 24px;
+    line-height: 24px;
+    margin: 15px 0;
+    a{
+        color: #666666;
+        font-size: 12px;
+    }
+}
+td,th{
+    padding: 5px;
+}
+#flow>h3{
+    background: #ececec;
+    line-height: 38px;
+    color: #666666;
+    font-weight: bold;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+.btnn{
+    background: url(../images/bg.gif) no-repeat 0px -663px;
+    width: 77px;
+    height: 21px;
+    text-align: center;
+    line-height: 22px;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+}

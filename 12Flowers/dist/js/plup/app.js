@@ -1,0 +1,1 @@
+require(["config"],function(){require(["index","jquery","banner","lunbo","home","jq-cook"],function(n,i,e,o,r){n.init.cha,r.init()})});

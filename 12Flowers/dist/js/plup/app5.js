@@ -1,0 +1,1 @@
+require(["config"],function(){require(["jquery","home","list","jq-cook","layui"],function(i,n,e){n.init(),e.init()})});

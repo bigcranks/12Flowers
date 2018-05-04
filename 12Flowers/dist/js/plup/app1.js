@@ -1,0 +1,1 @@
+require(["config"],function(){require(["jquery","home","xiang","jq-cook"],function(i,n,e){e.init.move,n.init()})});

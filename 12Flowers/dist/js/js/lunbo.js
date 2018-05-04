@@ -1,0 +1,1 @@
+"use strict";define(["banner"],function(){new Swiper(".swiper-container",{pagination:".swiper-pagination",paginationClickable:!0,paginationBulletRender:function(n,e,a){return'<span class="'+a+'">'+(e+1)+"</span>"},autoplay:3e3,speed:2e3,autoplayDisableOnInteraction:!1,effect:"fade"})});

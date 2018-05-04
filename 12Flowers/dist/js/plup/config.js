@@ -1,0 +1,1 @@
+require.config({baseUrl:"./../js",paths:{index:"js/index",jquery:"lib/jquery-1.11.3",banner:"plup/swiper-3.4.2.min",lunbo:"js/lunbo",home:"js/home",xiang:"js/xiang",deng:"js/deng","jq-cook":"lib/jquery.cookie",zhu:"js/zhu",gou:"js/gou",layui:"plup/layui/layui",list:"js/list"},shim:{}});
